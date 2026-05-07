@@ -8,8 +8,11 @@ const { query, validationResult } = require("express-validator");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors({ 
-  origin: ['http://localhost:5173', 'https://msl-frontend.onrender.com'] 
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://msl-app-1.onrender.com/'
+  ]
 }));
 app.use(express.json());
 
